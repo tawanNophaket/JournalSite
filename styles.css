@@ -1,0 +1,148 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #1a1a2e;
+    color: #e94560;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #16213e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+label,
+select,
+input,
+textarea,
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0f3460;
+    color: #e94560;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a1a2e;
+}
+
+#previousEntries p,
+#taskList li,
+#tasksForDate li {
+    padding: 10px;
+    background-color: #0f3460;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #e94560;
+}
+
+#previousEntries button,
+#taskList button {
+    margin-left: 10px;
+}
+
+.entry {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    background-color: #0f3460;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.entry-date-time, .entry-category {
+    flex-shrink: 0; /* Prevent these from shrinking */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.entry-content {
+    flex-shrink: 1; /* Allow this to shrink if needed */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden; /* Hide overflow */
+}
+
+.task-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    background-color: #0f3460;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-date {
+    flex-shrink: 0; /* Prevent this from shrinking */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.task-content {
+    flex-shrink: 1; /* Allow this to shrink if needed */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden; /* Hide overflow */
+}
+
+.entry-category {
+    font-weight: bold;
+    margin: 0 10px;
+    background-color: #1a1a2e;
+    padding: 5px;
+    border-radius: 5px;
+    color: #e94560;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0f3460;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-date {
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: #1a1a2e;
+    padding: 5px;
+    border-radius: 5px;
+    color: #e94560;
+}
+
+.task-content {
+    flex-grow: 1;
+}

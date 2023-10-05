@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rak na</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Chanida Marnkarnna</h1>
+        <div class="section journal-section">
+            <h2>จดบันทึก</h2>
+            <label for="category">หมวดหมู่:</label>
+            <select id="category">
+                <option value="Personal">ประจำวัน</option>
+                <option value="Work">อาหาร</option>
+                <option value="Travel">ไอเดีย/บท</option>
+                <option value="Other">อื่นๆ</option>
+            </select>
+            <textarea id="journalEntry" placeholder="Write your journal entry..."
+                onkeydown="checkForEnter(event)"></textarea>
+            <button id="submitEntry">ยืนยัน</button>
+            <button id="togglePrevious">ประวัติการจดบันทึก</button>
+            <div id="previousEntries" style="display: none;"></div>
+        </div>
+        <div class="section tasks-section">
+            <h2>จัดการงาน</h2>
+            <label for="taskStart">วันเริ่ม</label>
+            <input type="date" id="taskStart">
+            <label for="taskDeadline">เดดไลน์</label>
+            <input type="date" id="taskDeadline">
+            <input type="text" id="newTask" placeholder="New task..." onkeydown="checkForEnterTask(event)">
+            <button onclick="addTask()">เพิ่ม</button>
+            <ul id="taskList"></ul>
+        </div>
+        <div class="section calendar-section">
+            <h2>ปฏิธินงาน</h2>
+            <input type="date" id="calendarDate" onchange="loadTasksForDate()">
+            <ul id="tasksForDate"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
