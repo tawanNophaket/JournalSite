@@ -16,12 +16,12 @@
             <h2>จดบันทึก</h2>
             <label for="category">หมวดหมู่:</label>
             <select id="category">
-                <option value="Personal">ประจำวัน</option>
-                <option value="Work">อาหาร</option>
-                <option value="Travel">ไอเดีย/บท</option>
-                <option value="Other">อื่นๆ</option>
+                <option value="ประจำวัน">ประจำวัน</option>
+                <option value="อาหาร">อาหาร</option>
+                <option value="ไอเดีย/บท">ไอเดีย/บท</option>
+                <option value="อื่นๆ">อื่นๆ</option>
             </select>
-            <textarea id="journalEntry" placeholder="Write your journal entry..."
+            <textarea id="journalEntry" placeholder="เขียนจดบันทึก..."
                 onkeydown="checkForEnter(event)"></textarea>
             <button id="submitEntry">ยืนยัน</button>
             <button id="togglePrevious">ประวัติการจดบันทึก</button>
@@ -33,7 +33,7 @@
             <input type="date" id="taskStart">
             <label for="taskDeadline">เดดไลน์</label>
             <input type="date" id="taskDeadline">
-            <input type="text" id="newTask" placeholder="New task..." onkeydown="checkForEnterTask(event)">
+            <input type="text" id="newTask" placeholder="เพิ่มงานใหม่..." onkeydown="checkForEnterTask(event)">
             <button onclick="addTask()">เพิ่ม</button>
             <ul id="taskList"></ul>
         </div>
